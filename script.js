@@ -1,11 +1,13 @@
 const levels = [
-  { name:"Every End", creators:"Showerless2804, MoseCoder", verifier:"Aqua Gd", publisher:"Showerless2804", points:"350", id:"https://scratch.mit.edu/projects/1161286985/", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:1 },
-  { name:"Solar Flare", creators:"Add creator names", verifier:"Add verifier", publisher:"Add publisher", points:"150", id:"Add level ID", password:"N/A", video:"", rank:2 },
-  { name:"Ephemeral Abyss", creators:"Add creator names", verifier:"Add verifier", publisher:"Add publisher", points:"100", id:"Add level ID", password:"N/A", video:"", rank:3 },
-  { name:"The Third Variant", creators:"Add creator names", verifier:"Add verifier", publisher:"Add publisher", points:"75", id:"Add level ID", password:"N/A", video:"", rank:4 }
-];
+  { name:"Grief", creator:"nullgdscr", verifier:"Raz0r_gd", publisher:"nullgdscr", points:"2500",id:"https://scratch.mit.edu/projects/1136377741/", video:"https://www.youtube.com/watch?v=9lUkjJmZPmY", rank:1 },
+  { name:"Every End", creators:"Showerless2804, MoseCoder", verifier:"Aqua Gd", publisher:"Showerless2804", points:"2250", id:"https://scratch.mit.edu/projects/1161286985/", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:2 },
+  { name:"Night Rider", creators:"Showerless2804", verifier:"Showerless", publisher:"Showerless2804", points:"2000", id:"https://scratch.mit.edu/projects/1146157232/", video:"https://www.youtube.com/watch?v=YA9pMaUhYUI", rank:3 },
+  { name:"Amethyst", creators:"GdAqua", verifier:"Showerless", publisher:"GdAqua", points:"2000", id:"https://scratch.mit.edu/projects/1161286985/", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:4 },
+  { name:"Solar Flare", creators:"Add creator names", verifier:"Add verifier", publisher:"Add publisher", points:"1900", id:"https://scratch.mit.edu/projects/1390124247/", video:"https://www.youtube.com/watch?v=rMZdNWoME8M", rank:5 },
+  { name:"Ephemeral Abyss", creators:"GdAqua", verifier:"ShayK47", publisher:"GdAqua", points:"1500", id:"https://scratch.mit.edu/projects/1136878874/", video:"https://www.youtube.com/watch?v=tvZEgNGRUUc", rank:6 },
+  { name:"The Third Variant", creators:"Add creator names", verifier:"Add verifier", publisher:"Add publisher", points:"75", id:"Add level ID", password:"N/A", video:"", rank:7 }
 
-let selectedLevel = 0;
+  let selectedLevel = 0;
 const levelButtons = document.getElementById("levelButtons");
 const mainContent = document.getElementById("mainContent");
 
