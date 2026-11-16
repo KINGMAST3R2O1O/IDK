@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The GIFASH Levels LIST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="EGDL home">GIFASH <small>LEVELS LIST</small></a>
+    <nav class="nav">
+      <button class="nav-link active" data-page="list">List</button>
+      <button class="nav-link" data-page="leaderboard">Leaderboard</button>
+      <button class="nav-link" data-page="roulette">Roulette</button>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="themeToggle" title="Toggle dark mode">☾</button>
+      <button class="submit-button" id="openSubmit">Submit Record</button>
+    </div>
+  </header>
+
+  <main id="app" class="layout">
+    <aside class="level-sidebar">
+      <div class="sidebar-title">LEVELS</div>
+      <div id="levelButtons"></div>
+    </aside>
+
+    <section class="main-content" id="mainContent"></section>
+
+    <aside class="right-sidebar">
+      <p class="credit">The GIFASH Levels LIST</p>
+      <h2>List Editors</h2>
+      <p>👑 ShayK47</p>
+      <p>🛡️ KINGMAST3R2010</p>
+      <h2>Submission Requirements</h2>
+      <p>Must be on video and show clicks. Hitboxes are allowed.</p>
+    </aside>
+  </main>
+
+  <dialog id="submitDialog">
+    <form method="dialog" id="submitForm">
+      <button class="dialog-close" value="cancel" aria-label="Close">×</button>
+      <h2>Submit a Record</h2>
+      <label>Player name<input name="player" required placeholder="Your username"></label>
+      <label>Level<select name="level" id="submitLevel"></select></label>
+      <label>Progress (%)<input name="progress" type="number" min="1" max="100" required placeholder="100"></label>
+      <label>Video link<input name="video" type="url" required placeholder="https://youtube.com/..."></label>
+      <button class="submit-button" type="submit">Send submission</button>
+      <p class="form-note">Demo form: submissions are not saved yet. A backend or database is needed for real submissions.</p>
+    </form>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
