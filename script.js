@@ -1,5 +1,5 @@
 const levels = [
-  { name:"Defeated Circles", creators:"gdscractch, MoseCoder", verifier:"KINGMAST3R2010", publisher:"gdscractch", points:"200", id:"scratch.mit.edu/projects/1183427199", password:"Hitboxes", video:"", rank:1 },
+  { name:"Every End", creators:"Showerless2804, MoseCoder", verifier:"Aqua Gd", publisher:"Showerless2804", points:"350", id:"https://scratch.mit.edu/projects/1161286985/", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:1 },
   { name:"Solar Flare", creators:"Add creator names", verifier:"Add verifier", publisher:"Add publisher", points:"150", id:"Add level ID", password:"N/A", video:"", rank:2 },
   { name:"Ephemeral Abyss", creators:"Add creator names", verifier:"Add verifier", publisher:"Add publisher", points:"100", id:"Add level ID", password:"N/A", video:"", rank:3 },
   { name:"The Third Variant", creators:"Add creator names", verifier:"Add verifier", publisher:"Add publisher", points:"75", id:"Add level ID", password:"N/A", video:"", rank:4 }
