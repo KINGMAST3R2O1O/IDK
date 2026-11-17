@@ -1,4 +1,3 @@
-const levels = [
   { name:"Grief", creator:"nullgdscr", verifier:"Raz0r_gd", publisher:"nullgdscr", points:"2500",id:"https://scratch.mit.edu/projects/1136377741/", video:"https://www.youtube.com/watch?v=9lUkjJmZPmY", rank:1 },
   { name:"Every End", creators:"Showerless2804, MoseCoder", verifier:"Aqua Gd", publisher:"Showerless2804", points:"2250", id:"https://scratch.mit.edu/projects/1161286985/", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:2 },
   { name:"Night Rider", creators:"Showerless2804", verifier:"Showerless", publisher:"Showerless2804", points:"2000", id:"https://scratch.mit.edu/projects/1146157232/", video:"https://www.youtube.com/watch?v=YA9pMaUhYUI", rank:3 },
