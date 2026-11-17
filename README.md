@@ -1,6 +1,6 @@
-# The GIFASH Levels LIST
+# The GIFDASH Levels LIST
 
-The GIFASH Levels LIST is a Geometry Dash community list ranking hard levels, featuring level information, videos, records, a leaderboard, and roulette.
+The GIFDASH Levels LIST is a Geometry Dash community list ranking hard levels, featuring level information, videos, records, a leaderboard, and roulette.
 
 ## Run it locally
 1. Download or clone this repository.
