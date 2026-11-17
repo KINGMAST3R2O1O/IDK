@@ -6,7 +6,7 @@ const levels = [
   { name:"Solar Flare", creators:"Add creator names", verifier:"Add verifier", publisher:"Add publisher", points:"1900", id:"https://scratch.mit.edu/projects/1390124247/", video:"https://www.youtube.com/watch?v=rMZdNWoME8M", rank:5 },
   { name:"Ephemeral Abyss", creators:"GdAqua", verifier:"ShayK47", publisher:"GdAqua", points:"1500", id:"https://scratch.mit.edu/projects/1136878874/", video:"https://www.youtube.com/watch?v=tvZEgNGRUUc", rank:6 },
   { name:"The Third Variant", creators:"Add creator names", verifier:"Add verifier", publisher:"Add publisher", points:"75", id:"Add level ID", password:"N/A", video:"", rank:7 }
-]
+  ];
   let selectedLevel = 0;
 const levelButtons = document.getElementById("levelButtons");
 const mainContent = document.getElementById("mainContent");
