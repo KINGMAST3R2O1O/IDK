@@ -34,55 +34,37 @@ function renderLevelList() {
 }
 
 function showLevel() {
-  const level = levels[selectedLevel];
-  const thumbnail = getYouTubeThumbnail(level.video || "");
+    const level = levels[selectedLevel];
+    const thumbnail = getYouTubeThumbnail(level.video || "");
+    const videoId = level.video ? getYouTubeThumbnail(level.video).match(/\/vi\/([^\/]+)\//)?.[1] : "";
 
-  mainContent.innerHTML = `
-    <h1>${level.name}</h1>
-    <div class="meta">
-      <strong>CREATORS</strong><span>${level.creators || level.creator || "Unknown"}</span>
-      <strong>VERIFIER</strong><span>${level.verifier}</span>
-      <strong>PUBLISHER</strong><span>${level.publisher}</span>
-    </div>
-    <div class="video-placeholder">
-      ${thumbnail
-        ? `<a href="${level.video}" target="_blank" rel="noopener"><img src="${thumbnail}" alt="${level.name} YouTube thumbnail"></a>`
-        : `<span>${level.name}<br><small>NO VIDEO AVAILABLE</small></span>`
-      }
-      ${level.video ? `<a href="${level.video}" target="_blank" rel="noopener">Watch video ↗</a>` : ""}
-    </div>
-    <div class="stats">
-      <div class="stat"><b>POINTS WHEN COMPLETED</b><span>${level.points}</span></div>
-      <div class="stat"><b>ID</b><span>${level.id}</span></div>
-      <div class="stat"><b>PASSWORD</b><span>${level.password || "N/A"}</span></div>
-    </div>`;
+    const videoHTML = videoId
+        ? `<div class="video-placeholder" onclick="this.innerHTML='<iframe src=\\'https://www.youtube.com/embed/${videoId}?autoplay=1\\' allow=\\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\\' allowfullscreen></iframe>'">
+             <img src="https://img.youtube.com/vi/${videoId}/hqdefault.jpg" alt="${level.name} thumbnail">
+             <div class="play-btn">▶</div>
+             <a href="${level.video}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Watch video ↗</a>
+           </div>`
+        : `<div class="video-placeholder"><span>${level.name}<br><small>NO VIDEO AVAILABLE</small></span></div>`;
+
+    mainContent.innerHTML = `
+        <h1>${level.name}</h1>
+        <div class="meta">
+            <strong>CREATORS</strong><span>${level.creators || level.creator || "Unknown"}</span>
+            <strong>VERIFIER</strong><span>${level.verifier}</span>
+            <strong>PUBLISHER</strong><span>${level.publisher}</span>
+        </div>
+        
+        ${videoHTML}
+
+        <div class="stats">
+            <div class="stat"><b>POINTS WHEN COMPLETED</b><span>${level.points}</span></div>
+            <div class="stat"><b>ID</b><span>${level.id}</span></div>
+            <div class="stat"><b>PASSWORD</b><span>${level.password || "N/A"}</span></div>
+        </div>
+    `;
 }
-
 function showLeaderboard() {
   mainContent.innerHTML = `
-    <div class="page-panel">
-      <h1>Leaderboard</h1>
-      <div class="table-row"><span>Rank</span><span>Player</span><span>Records</span></div>
-      <div class="table-row"><b>#1</b><span>Add player</span><span>0</span></div>
-      <div class="table-row"><b>#2</b><span>Add player</span><span>0</span></div>
-      <p>Player rankings will appear here when you add record data.</p>
-    </div>`;
-}
-
-function showRoulette() {
-  mainContent.innerHTML = `
-    <div class="page-panel">
-      <h1>Roulette</h1>
-      <p>Pick a random level from the list.</p>
-      <div class="roulette-result" id="rouletteResult">Ready?</div>
-      <button class="action-button" id="spinButton">Spin the roulette</button>
-    </div>`;
-
-  document.getElementById("spinButton").addEventListener("click", () => {
-    const result = levels[Math.floor(Math.random() * levels.length)];
-    document.getElementById("rouletteResult").textContent = result.name;
-  });
-}
 
 document.querySelectorAll(".nav-link").forEach(button => {
   button.addEventListener("click", () => {
