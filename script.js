@@ -73,10 +73,10 @@ function showLevel() {
         
         ${videoHTML}
 
-        <div class="stats">
-            <div class="stat"><b>POINTS WHEN COMPLETED</b><span>${level.points}</span></div>
-            <div class="stat"><b>ID</b><span><a href="${level.id}" target="_blank" style="color:inherit; text-decoration:underline;">Project Link</a></span></div>
-            <div class="stat"><b>PASSWORD</b><span>${level.password || "N/A"}</span></div>
+     <div class="stats">
+            <div class="stat"><b>POINTS WHEN COMPLETED:</b><span>${level.points}</span></div>
+            <div class="stat"><b>ID:</b><span><a href="${level.id}" target="_blank" style="color:inherit; text-decoration:underline;">Project Link</a></span></div>
+            <div class="stat"><b>PASSWORD:</b><span>${level.password || "N/A"}</span></div>
         </div>
 
         <div class="page-panel" style="margin-top: 36px; text-align: left;">
