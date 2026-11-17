@@ -109,7 +109,7 @@ function showRoulette() {
 
   document.getElementById("spinButton").addEventListener("click", () => {
     const result = levels[Math.floor(Math.random() * levels.length)];
-    document.getElementById("rouletteResult তাপমাত্রা" || "rouletteResult").textContent = result.name;
+    document.getElementById("rouletteResult" || "rouletteResult").textContent = result.name;
   });
 }
 
