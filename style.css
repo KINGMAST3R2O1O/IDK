@@ -50,8 +50,18 @@ h1 { font-size: clamp(34px, 4vw, 58px); line-height: 1.1; margin: 0 0 18px; lett
   margin-bottom: 28px; 
 }
 .meta strong { font-weight: 1000; }
-.video-placeholder { width:100%; aspect-ratio:16/9; background:linear-gradient(135deg,#17152d,#34305b 55%,#101321); display:grid; place-items:center; color:white; border:1px solid var(--line); position:relative; overflow:hidden; }
-.video-placeholder::before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 50% 50%,rgba(120,110,255,.35),transparent 55%); }
+.video-placeholder { 
+  width: 100%; 
+  max-width: 680px; 
+  margin: 0 auto; 
+  aspect-ratio: 16/9; 
+  background: linear-gradient(135deg,#17152d,#34305b 55%,#101321); 
+  display: grid; 
+  place-items: center; 
+  position: relative; 
+  border-radius: 12px; 
+  overflow: hidden; 
+}.video-placeholder::before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 50% 50%,rgba(120,110,255,.35),transparent 55%); }
 .video-placeholder span { z-index:1; font-size:clamp(24px,4vw,48px); font-weight:1000; text-shadow:0 3px 15px #000; text-align:center; padding:20px; }
 .video-placeholder a { position:absolute; bottom:15px; right:18px; color:white; z-index:2; }
 .stats { display:grid; grid-template-columns:1fr 1.5fr 1fr; gap:14px; text-align:center; margin-top:26px; }
