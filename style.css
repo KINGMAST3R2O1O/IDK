@@ -45,6 +45,7 @@ h1 { font-size: clamp(34px, 4vw, 58px); line-height: 1.1; margin: 0 0 18px; lett
   display: flex; 
   flex-direction: column; 
   align-items: center; 
+  text-align: center;
   gap: 6px; 
   font-size: 17px; 
   margin-bottom: 28px; 
@@ -55,7 +56,13 @@ h1 { font-size: clamp(34px, 4vw, 58px); line-height: 1.1; margin: 0 0 18px; lett
 .video-placeholder span { z-index:1; font-size:clamp(24px,4vw,48px); font-weight:1000; text-shadow:0 3px 15px #000; text-align:center; padding:20px; }
 .video-placeholder a { position:absolute; bottom:15px; right:18px; color:white; z-index:2; }
 .stats { display:grid; grid-template-columns:1fr 1.5fr 1fr; gap:14px; text-align:center; margin-top:26px; }
-.stat { min-width:0; }
+.stat { 
+  min-width: 0; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 .stat b { display:block; font-size:16px; }
 .stat span { display:block; overflow-wrap:anywhere; font-size:16px; margin-top:6px; }
 .right-sidebar { border-left:1px solid var(--line); padding:32px 30px; }
