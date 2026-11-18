@@ -7,7 +7,7 @@ const levels = [
   { name:"Tidal Wave", creators:"MoseCoder", verifier:"Showerless", publisher:"MoseCoder", points:"4000", id:"https://turbowarp.org/1121950892", video:"https://www.youtube.com/watch?v=a385Fo8-gHE", rank:6, records: [] },
   { name:"Natural Disaster", creators:"MoseCoder", verifier:"Showerless", publisher:"MoseCoder", points:"3850", id:"https://turbowarp.org/1158157751", video:"https://www.youtube.com/watch?v=0igPjv_W1bI", rank:7, records: [] },
   { name:"Defeated Circles", creators:"gdscractch", verifier:"KING_MAST3R2O1O", publisher:"gdscractch", points:"2500", id:"https://turbowarp.org/1183427199", video:"https://www.youtube.com/watch?v=J6IBEQFZxeE", rank:8, records: [] },
-  { name:"Solar Flare", creators:"dasamonky", verifier:"KING_MAST3R2O1O", publisher:"dasamonky", points:"2100", id:"https://scratch.mit.edu/projects/1390124247/", video:"https://www.youtube.com/watch?v=rMZdNWoME8M", rank:9, records: [] },
+  { name:"Solar Flare", creators:"dasamonky", verifier:"KING_MAST3R2O1O", publisher:"dasamonky", points:"2100", id:"https://turbowarp.org/1390124247", video:"https://www.youtube.com/watch?v=rMZdNWoME8M", rank:9, records: [] },
   { name:"Ephemeral Abyss", creators:"GdAqua", verifier:"ShayK47", publisher:"GdAqua", points:"1600", id:"https://scratch.mit.edu/projects/1136878874/", video:"https://www.youtube.com/watch?v=tvZEgNGRUUc", rank:10, records: [] },
   { name:"The Third Variant", creators:"GdAqua", verifier:"Aqua Gd", publisher:"GdAqua", points:"700", id:"https://scratch.mit.edu/projects/1136745773/", password:"N/A", video:"https://www.youtube.com/watch?v=-VDY-pks5dM", rank:11, records: [] }
 ];
