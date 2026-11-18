@@ -1,20 +1,5 @@
 const levels = [
-  { 
-    name: "Grief", 
-    creator: "nullgdscr", 
-    creators: "nullgdscr", 
-    verifier: "Raz0r_gd", 
-    publisher: "nullgdscr", 
-    points: "5000", 
-    id: "https://turbowarp.org/1136377741", 
-    video: "https://www.youtube.com/watch?v=9lUkjJmZPmY", 
-    rank: 1, 
-    records: [
-      { player: "Zoink", percent: 100 },
-      { player: "Trick", percent: 100 }
-    ] 
-  },
-  {
+  { name:"Grief", creator:"nullgdscr", creators:"nullgdscr", verifier:"Raz0r_gd", publisher:"nullgdscr", points:"5000", id:"https://turbowarp.org/1136377741", video:"https://www.youtube.com/watch?v=9lUkjJmZPmY", rank:1, records: [] },
   { name:"Every End", creators:"Showerless2804, MoseCoder", verifier:"Aqua Gd", publisher:"Showerless2804", points:"4900", id:"https://turbowarp.org/1161286985", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:2, records: [] },
   { name:"Night Rider", creators:"Showerless2804", verifier:"Showerless", publisher:"Showerless2804", points:"4750", id:"https://turbowarp.org/1146157232", video:"https://www.youtube.com/watch?v=YA9pMaUhYUI", rank:3, records: [] },
   { name:"Amethyst", creators:"GdAqua", verifier:"Showerless", publisher:"GdAqua", points:"4500", id:"https://turbowarp.org/1135612107", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:4, records: [] },
