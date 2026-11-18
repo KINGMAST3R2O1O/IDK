@@ -1,14 +1,15 @@
 const levels = [
-  { name:"Grief", creator:"nullgdscr", creators:"nullgdscr", verifier:"Raz0r_gd", publisher:"nullgdscr", points:"5000", id:"https://scratch.mit.edu/projects/1136377741/", video:"https://www.youtube.com/watch?v=9lUkjJmZPmY", rank:1, records: [] },
-  { name:"Every End", creators:"Showerless2804, MoseCoder", verifier:"Aqua Gd", publisher:"Showerless2804", points:"4900", id:"https://scratch.mit.edu/projects/1161286985/", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:2, records: [] },
-  { name:"Night Rider", creators:"Showerless2804", verifier:"Showerless", publisher:"Showerless2804", points:"4750", id:"https://scratch.mit.edu/projects/1146157232/", video:"https://www.youtube.com/watch?v=YA9pMaUhYUI", rank:3, records: [] },
-  { name:"Amethyst", creators:"GdAqua", verifier:"Showerless", publisher:"GdAqua", points:"4500", id:"https://scratch.mit.edu/projects/1161286985/", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:4, records: [] },
-  { name:"Wasureta", creators:"gdscractch", verifier:"KING_MAST3R2O1O", publisher:"gdscractch", points:"4200", id:"https://scratch.mit.edu/projects/1165397248/", video:"https://www.youtube.com/watch?v=QlNvs341MPI", rank:5, records: [] },
-  { name:"Tidal Wave", creators:"MoseCoder", verifier:"Showerless", publisher:"MoseCoder", points:"3800", id:"https://scratch.mit.edu/projects/1121950892/", video:"https://www.youtube.com/watch?v=a385Fo8-gHE", rank:6, records: [] },
-  { name:"Defeated Circles", creators:"gdscractch", verifier:"KING_MAST3R2O1O", publisher:"gdscractch", points:"2500", id:"https://scratch.mit.edu/projects/1183427199/", video:"https://www.youtube.com/watch?v=J6IBEQFZxeE", rank:7, records: [] },
-  { name:"Solar Flare", creators:"dasamonky", verifier:"KING_MAST3R2O1O", publisher:"dasamonky", points:"2100", id:"https://scratch.mit.edu/projects/1390124247/", video:"https://www.youtube.com/watch?v=rMZdNWoME8M", rank:8, records: [] },
-  { name:"Ephemeral Abyss", creators:"GdAqua", verifier:"ShayK47", publisher:"GdAqua", points:"1600", id:"https://scratch.mit.edu/projects/1136878874/", video:"https://www.youtube.com/watch?v=tvZEgNGRUUc", rank:9, records: [] },
-  { name:"The Third Variant", creators:"GdAqua", verifier:"Aqua Gd", publisher:"GdAqua", points:"700", id:"https://scratch.mit.edu/projects/1136745773/", password:"N/A", video:"https://www.youtube.com/watch?v=-VDY-pks5dM", rank:10, records: [] }
+  { name:"Grief", creator:"nullgdscr", creators:"nullgdscr", verifier:"Raz0r_gd", publisher:"nullgdscr", points:"5000", id:"https://turbowarp.org/1136377741", video:"https://www.youtube.com/watch?v=9lUkjJmZPmY", rank:1, records: [] },
+  { name:"Every End", creators:"Showerless2804, MoseCoder", verifier:"Aqua Gd", publisher:"Showerless2804", points:"4900", id:"https://turbowarp.org/1161286985", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:2, records: [] },
+  { name:"Night Rider", creators:"Showerless2804", verifier:"Showerless", publisher:"Showerless2804", points:"4750", id:"https://turbowarp.org/1146157232", video:"https://www.youtube.com/watch?v=YA9pMaUhYUI", rank:3, records: [] },
+  { name:"Amethyst", creators:"GdAqua", verifier:"Showerless", publisher:"GdAqua", points:"4500", id:"https://turbowarp.org/1135612107", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:4, records: [] },
+  { name:"Wasureta", creators:"gdscractch", verifier:"KING_MAST3R2O1O", publisher:"gdscractch", points:"4200", id:"https://turbowarp.org/1165397248", video:"https://www.youtube.com/watch?v=QlNvs341MPI", rank:5, records: [] },
+  { name:"Tidal Wave", creators:"MoseCoder", verifier:"Showerless", publisher:"MoseCoder", points:"4000", id:"https://turbowarp.org/1121950892", video:"https://www.youtube.com/watch?v=a385Fo8-gHE", rank:6, records: [] },
+  { name:"Natural Disaster", creators:"MoseCoder", verifier:"Showerless", publisher:"MoseCoder", points:"3850", id:"https://turbowarp.org/1158157751", video:"https://www.youtube.com/watch?v=0igPjv_W1bI", rank:7, records: [] },
+  { name:"Defeated Circles", creators:"gdscractch", verifier:"KING_MAST3R2O1O", publisher:"gdscractch", points:"2500", id:"https://turbowarp.org/1183427199", video:"https://www.youtube.com/watch?v=J6IBEQFZxeE", rank:8, records: [] },
+  { name:"Solar Flare", creators:"dasamonky", verifier:"KING_MAST3R2O1O", publisher:"dasamonky", points:"2100", id:"https://scratch.mit.edu/projects/1390124247/", video:"https://www.youtube.com/watch?v=rMZdNWoME8M", rank:9, records: [] },
+  { name:"Ephemeral Abyss", creators:"GdAqua", verifier:"ShayK47", publisher:"GdAqua", points:"1600", id:"https://scratch.mit.edu/projects/1136878874/", video:"https://www.youtube.com/watch?v=tvZEgNGRUUc", rank:10, records: [] },
+  { name:"The Third Variant", creators:"GdAqua", verifier:"Aqua Gd", publisher:"GdAqua", points:"700", id:"https://scratch.mit.edu/projects/1136745773/", password:"N/A", video:"https://www.youtube.com/watch?v=-VDY-pks5dM", rank:11, records: [] }
 ];
 
 let selectedLevel = 0;
