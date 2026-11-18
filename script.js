@@ -1,4 +1,4 @@
- const levels = [
+const levels = [
   { name:"Grief", creator:"nullgdscr", creators:"nullgdscr", verifier:"Raz0r_gd", publisher:"nullgdscr", points:"5000", id:"https://turbowarp.org/1136377741", video:"https://www.youtube.com/watch?v=9lUkjJmZPmY", rank:1, records: [] },
   { name:"Every End", creators:"Showerless2804, MoseCoder", verifier:"Aqua Gd", publisher:"Showerless2804", points:"4900", id:"https://turbowarp.org/1161286985", video:"https://www.youtube.com/watch?v=hSBlAd6RwlI&t=278s", rank:2, records: [] },
   { name:"Night Rider", creators:"Showerless2804", verifier:"Showerless", publisher:"Showerless2804", points:"4750", id:"https://turbowarp.org/1146157232", video:"https://www.youtube.com/watch?v=YA9pMaUhYUI", rank:3, records: [] },
@@ -75,7 +75,7 @@ function showLevel() {
         
         ${videoHTML}
 
-     <div class="stats">
+        <div class="stats">
             <div class="stat"><b>POINTS WHEN COMPLETED:</b><span>${level.points}</span></div>
             <div class="stat"><b>ID:</b><span><a href="${level.id}" target="_blank" style="color:inherit; text-decoration:underline;">Project Link</a></span></div>
             <div class="stat"><b>PASSWORD:</b><span>${level.password || "N/A"}</span></div>
@@ -111,7 +111,7 @@ function showRoulette() {
 
   document.getElementById("spinButton").addEventListener("click", () => {
     const result = levels[Math.floor(Math.random() * levels.length)];
-    document.getElementById("rouletteResult" || "rouletteResult").textContent = result.name;
+    document.getElementById("rouletteResult").textContent = result.name;
   });
 }
 
